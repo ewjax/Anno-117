@@ -1,33 +1,61 @@
 
-<!-- from Koda Uzumaki, how he adds colors
--->
-
 <ModOps>
     <ModOp Add="//TextExport/Texts">
+
+        <!-- START: ----------------------------- Custom Color Names ------------------------------- -->
         <Text>
-            <LineId>2001000557</LineId>
+            <LineId>2000101000</LineId>
+            <Text>Bright Red</Text>
+        </Text>
+        <Text>
+            <LineId>2000101001</LineId>
+            <Text>Bright Green</Text>
+        </Text>
+        <Text>
+            <LineId>2000101002</LineId>
+            <Text>Bright Blue</Text>
+        </Text>
+        <Text>
+            <LineId>2000101003</LineId>
+            <Text>Bright Yellow</Text>
+        </Text>
+        <Text>
+            <LineId>2000101004</LineId>
+            <Text>Bright Purple</Text>
+        </Text>
+        <Text>
+            <LineId>2000101005</LineId>
+            <Text>Bright Cyan</Text>
+        </Text>
+        <!-- END: ----------------------------- Custom Color Names ------------------------------- -->
+
+        <!-- START: ----------------------------- More colors, from discord user Koda Uzamaki ------------------------------- -->
+        <Text>
+            <LineId>2000101057</LineId>
             <Text>Imperial Green</Text>
         </Text>
         <Text>
-            <LineId>2001000558</LineId>
+            <LineId>2000101058</LineId>
             <Text>Grey</Text>
         </Text>
         <Text>
-            <LineId>2001000559</LineId>
+            <LineId>2000101059</LineId>
             <Text>Dark Bluegreen</Text>
         </Text>
         <Text>
-            <LineId>2001000560</LineId>
+            <LineId>2000101060</LineId>
             <Text>Celtic Olivegreen</Text>
         </Text>
         <Text>
-            <LineId>2001000561</LineId>
+            <LineId>2000101061</LineId>
             <Text>Dark Imperial Red</Text>
         </Text>
         <Text>
-            <LineId>2001000562</LineId>
+            <LineId>2000101062</LineId>
             <Text>Dark Imperial Purpel</Text>
         </Text>
+        <!-- END: ----------------------------- More colors, from discord user Koda Uzamaki ------------------------------- -->
+
     </ModOp>
 </ModOps>
 
