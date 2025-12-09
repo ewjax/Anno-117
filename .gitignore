@@ -1,0 +1,19 @@
+.vs/
+
+# Executables
+*.exe
+*.out
+*.app
+
+# VS Code
+*.vscode
+
+# working directory
+working/
+
+# Visual SlickEdit projct files
+*.vtg
+*.vpj
+*.vpw
+*.vpwhist
+
