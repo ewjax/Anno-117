@@ -18,3 +18,6 @@ working/
 *.vpw
 *.vpwhist
 
+# anno rda reference file
+config.rda/
+
