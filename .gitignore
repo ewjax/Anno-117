@@ -10,6 +10,7 @@
 
 # working directory
 working/
+.modcache/
 
 # Visual SlickEdit projct files
 *.vtg

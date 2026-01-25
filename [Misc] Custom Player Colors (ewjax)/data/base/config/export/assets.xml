@@ -1,6 +1,6 @@
 <ModOps>
 
-    <!-- START: Define some custome colors -->
+    <!-- START: ================== Define some custome colors =================== -->
     <!-- Custom color Bright Red-->
     <ModOp GUID="2002447" Type="addNextSibling">
         <Asset>
@@ -222,9 +222,9 @@
             </Values>
         </Asset>
     </ModOp>
-    <!-- END: Define some custome colors -->
+    <!-- END: ================== Define some custome colors =================== -->
 
-    <!-- START: More colors, from discord user Koda Uzamaki -->
+    <!-- START: ========================== More colors, from discord user Koda Uzamaki ===================== -->
     <!-- Custom Dark Green -->
     <ModOp GUID="2002447" Type="addNextSibling">
         <Asset>
@@ -442,9 +442,9 @@
             </Values>
         </Asset>
     </ModOp>
-    <!-- END: More colors, from discord user Koda Uzamaki -->
+    <!-- END: ========================== More colors, from discord user Koda Uzamaki ===================== -->
 
-    <!-- START: Register custom colors -->
+    <!-- START: ============================ Register custom colors ========================= -->
     <ModOp Type="add" GUID="2002447"
         Path="/Values/ParticipantRepresentationFeature/ParticipantColors">
         <Item>
@@ -484,7 +484,7 @@
             <Color>2000101062</Color>
         </Item>
     </ModOp>
-    <!-- END: Register custom colors -->
+    <!-- END: ============================ Register custom colors ========================= -->
 
 </ModOps>
 

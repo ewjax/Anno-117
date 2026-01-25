@@ -1,0 +1,13 @@
+{
+  "gameModsPath": "C:\\Users\\ewjax\\Documents\\Anno 117 - Pax Romana\\mods",
+  "include": [
+    "modinfo.json",
+    "data\\base\\config\\export\\assets.xml",
+    "data\\base\\config\\gui\\texts_english.xml"
+  ],
+  "exclude": [
+    "working\\**",
+    "*.psd",
+    "*.xcf"
+  ]
+}
