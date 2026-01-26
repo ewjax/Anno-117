@@ -762,6 +762,9 @@
     </ModOp>
 
     <!-- START: ============== set up new NPC colors for Diana, Valeria, Procruator, Manx============== -->
+
+
+
     <!-- Custom color Diana -->
 	<Asset>
 		<Template>ParticipantColor</Template>
@@ -772,10 +775,10 @@
 			</Standard>
 			<ParticipantColor>
 				<ParticipantUIColor>
-					<Deuteranopia>-7829368</Deuteranopia>
-					<Protanopia>-7829368</Protanopia>
-					<Tritanopia>-7829368</Tritanopia>
-					<None>-7829368</None>
+					<Deuteranopia>-5592406</Deuteranopia>
+					<Protanopia>-5592406</Protanopia>
+					<Tritanopia>-5592406</Tritanopia>
+					<None>-5592406</None>
 				</ParticipantUIColor>
 				<ParticipantInGameColor>
 					<Deuteranopia>-3175270</Deuteranopia>
@@ -807,10 +810,10 @@
 			</Standard>
 			<ParticipantColor>
 				<ParticipantUIColor>
-					<Deuteranopia>-7829368</Deuteranopia>
-					<Protanopia>-7829368</Protanopia>
-					<Tritanopia>-7829368</Tritanopia>
-					<None>-7829368</None>
+					<Deuteranopia>-5592406</Deuteranopia>
+					<Protanopia>-5592406</Protanopia>
+					<Tritanopia>-5592406</Tritanopia>
+					<None>-5592406</None>
 				</ParticipantUIColor>
 				<ParticipantInGameColor>
 					<Deuteranopia>-16680593</Deuteranopia>
@@ -842,10 +845,10 @@
 			</Standard>
 			<ParticipantColor>
 				<ParticipantUIColor>
-					<Deuteranopia>-7829368</Deuteranopia>
-					<Protanopia>-7829368</Protanopia>
-					<Tritanopia>-7829368</Tritanopia>
-					<None>-7829368</None>
+					<Deuteranopia>-5592406</Deuteranopia>
+					<Protanopia>-5592406</Protanopia>
+					<Tritanopia>-5592406</Tritanopia>
+					<None>-5592406</None>
 				</ParticipantUIColor>
 				<ParticipantInGameColor>
 					<Deuteranopia>-9226698</Deuteranopia>
@@ -877,10 +880,10 @@
 			</Standard>
 			<ParticipantColor>
 				<ParticipantUIColor>
-					<Deuteranopia>-7829368</Deuteranopia>
-					<Protanopia>-7829368</Protanopia>
-					<Tritanopia>-7829368</Tritanopia>
-					<None>-7829368</None>
+					<Deuteranopia>-5592406</Deuteranopia>
+					<Protanopia>-5592406</Protanopia>
+					<Tritanopia>-5592406</Tritanopia>
+					<None>-5592406</None>
 				</ParticipantUIColor>
 				<ParticipantInGameColor>
 					<Deuteranopia>-6773144</Deuteranopia>
@@ -901,6 +904,40 @@
 		<ModValue Insert="$manx_colour" />
 	</ModOp>
 	<ModOp Merge="@27079/Participant/DefaultColor">2000101103</ModOp>
+
+    <Asset>
+        <Template>ParticipantColor</Template>
+        <Values>
+            <Standard>
+				<GUID>2000101104</GUID>
+                <Name>Custom Voada Color</Name>
+            </Standard>
+            <ParticipantColor>
+                <ParticipantUIColor>
+                    <Deuteranopia>-6940391</Deuteranopia>
+                    <Protanopia>-6940391</Protanopia>
+                    <Tritanopia>-6940391</Tritanopia>
+                    <None>-6940391</None>
+                </ParticipantUIColor>
+                <ParticipantInGameColor>
+                    <!-- turn her sails red, instead of default green -->
+                    <Deuteranopia>-6940391</Deuteranopia>
+                    <Protanopia>-6940391</Protanopia>
+                    <Tritanopia>-6940391</Tritanopia>
+                    <None>-6940391</None>
+                </ParticipantInGameColor>
+            </ParticipantColor>
+            <Locked>
+                <Scope>Account</Scope>
+            </Locked>
+            <Text>
+            </Text>
+        </Values>
+    </Asset>
+	<ModOp Merge="@2000101104/ParticipantColor/*/*">
+		<ModValue Insert="$voada_colour" />
+	</ModOp>
+	<ModOp Merge="@37494/Participant/DefaultColor">2000101104</ModOp>
 
     <!-- END: ============== set up new NPC colors for Diana, Valeria, Procruator, Manx============== -->
 
@@ -993,6 +1030,9 @@
         </Item>
         <Item>
             <Color>2000101103</Color>
+        </Item>
+        <Item>
+            <Color>2000101104</Color>
         </Item>
 
     </ModOp>
