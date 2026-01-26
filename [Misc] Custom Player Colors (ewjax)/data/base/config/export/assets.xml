@@ -1,8 +1,10 @@
 <ModOps>
 
-    <!-- START: ================== Define some custome colors =================== -->
-    <!-- Custom color Bright Red-->
+    <!-- =================== Define some custome colors =================== -->
     <ModOp GUID="2002447" Type="addNextSibling">
+
+        <!-- START: =================== custom colors from ewjax =================== -->
+        <!-- Custom color Bright Red-->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -12,12 +14,14 @@
                     <ID>PARTICIPANT_CUSTOM_COLOR_BRIGHT_RED</ID>
                 </Standard>
                 <ParticipantColor>
+                    <!-- colors for Diplomacy screen, province and minimap symbols, etc -->
                     <ParticipantUIColor>
                         <Deuteranopia>-65536</Deuteranopia>
                         <Protanopia>-65536</Protanopia>
                         <Tritanopia>-65536</Tritanopia>
                         <None>-65536</None>
                     </ParticipantUIColor>
+                    <!-- colors for ship accent colors, sail colors, ship selection circles, etc -->
                     <ParticipantInGameColor>
                         <Deuteranopia>-3407872</Deuteranopia>
                         <Protanopia>-3407872</Protanopia>
@@ -36,10 +40,8 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
 
-    <!-- Custom color Bright Green -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+        <!-- Custom color Bright Green -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -73,10 +75,8 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
 
-    <!-- Custom color Bright Blue -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+        <!-- Custom color Bright Blue -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -110,10 +110,8 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
 
-    <!-- Custom color Bright Yellow -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+        <!-- Custom color Bright Yellow -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -147,10 +145,8 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
 
-    <!-- Custom color Bright Purple -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+        <!-- Custom color Bright Purple -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -184,10 +180,8 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
 
-    <!-- Custom color Bright Cyan -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+        <!-- Custom color Bright Cyan -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -221,12 +215,339 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
-    <!-- END: ================== Define some custome colors =================== -->
 
-    <!-- START: ========================== More colors, from discord user Koda Uzamaki ===================== -->
-    <!-- Custom Dark Green -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+        <!-- Custom color Jet Black -->
+        <Asset>
+            <Template>ParticipantColor</Template>
+            <Values>
+                <Standard>
+                    <GUID>2000101006</GUID>
+                    <Name>ParticipantColorCustomJetBlack</Name>
+                    <ID>PARTICIPANT_CUSTOM_COLOR_JET_BLACK</ID>
+                </Standard>
+                <ParticipantColor>
+                    <ParticipantUIColor>
+                        <Deuteranopia>-16777216</Deuteranopia>
+                        <Protanopia>-16777216</Protanopia>
+                        <Tritanopia>-16777216</Tritanopia>
+                        <None>-16777216</None>
+                    </ParticipantUIColor>
+                    <ParticipantInGameColor>
+                        <Deuteranopia>-16777216</Deuteranopia>
+                        <Protanopia>-16777216</Protanopia>
+                        <Tritanopia>-16777216</Tritanopia>
+                        <None>-16777216</None>
+                    </ParticipantInGameColor>
+                    <IsPlayerColor>1</IsPlayerColor>
+                </ParticipantColor>
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <Scope>Account</Scope>
+                    <VisibleWhenLocked>1</VisibleWhenLocked>
+                </Locked>
+                <Text>
+                    <OasisId>2000101006</OasisId>
+                </Text>
+            </Values>
+        </Asset>
+
+        <!-- Custom color Alabaster White -->
+        <Asset>
+            <Template>ParticipantColor</Template>
+            <Values>
+                <Standard>
+                    <GUID>2000101007</GUID>
+                    <Name>ParticipantColorCustomAlabasterWhite</Name>
+                    <ID>PARTICIPANT_CUSTOM_COLOR_ALABASTER_WHITE</ID>
+                </Standard>
+                <ParticipantColor>
+                    <ParticipantUIColor>
+                        <Deuteranopia>-2236963</Deuteranopia>
+                        <Protanopia>-2236963</Protanopia>
+                        <Tritanopia>-2236963</Tritanopia>
+                        <None>-2236963</None>
+                    </ParticipantUIColor>
+                    <ParticipantInGameColor>
+                        <Deuteranopia>-2236963</Deuteranopia>
+                        <Protanopia>-2236963</Protanopia>
+                        <Tritanopia>-2236963</Tritanopia>
+                        <None>-2236963</None>
+                    </ParticipantInGameColor>
+                    <IsPlayerColor>1</IsPlayerColor>
+                </ParticipantColor>
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <Scope>Account</Scope>
+                    <VisibleWhenLocked>1</VisibleWhenLocked>
+                </Locked>
+                <Text>
+                    <OasisId>2000101007</OasisId>
+                </Text>
+            </Values>
+        </Asset>
+        <!-- END: =================== custom colors from ewjax =================== -->
+
+        <!-- START: =================== More custom colors from Taludas ============== -->
+        <Asset>
+            <Template>ParticipantColor</Template>
+            <Values>
+                <Standard>
+                    <GUID>2000101010</GUID>
+                    <Name>ParticipantColor Pastel Orange</Name>
+                </Standard>
+                <ParticipantColor>
+                    <ParticipantUIColor>
+                        <Deuteranopia>-39091</Deuteranopia>
+                        <Protanopia>-39091</Protanopia>
+                        <Tritanopia>-39091</Tritanopia>
+                        <None>-39091</None>
+                    </ParticipantUIColor>
+                    <ParticipantInGameColor>
+                        <Deuteranopia>-39091</Deuteranopia>
+                        <Protanopia>-39091</Protanopia>
+                        <Tritanopia>-39091</Tritanopia>
+                        <None>-39091</None>
+                    </ParticipantInGameColor>
+                    <IsPlayerColor>1</IsPlayerColor>
+                </ParticipantColor>
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <Scope>Account</Scope>
+                    <VisibleWhenLocked>1</VisibleWhenLocked>
+                </Locked>
+                <Text>
+                    <OasisId>2000101010</OasisId>
+                </Text>
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>ParticipantColor</Template>
+            <Values>
+                <Standard>
+                    <GUID>2000101011</GUID>
+                    <Name>ParticipantColor Pastel rose</Name>
+                </Standard>
+                <ParticipantColor>
+                    <ParticipantUIColor>
+                        <Deuteranopia>-32596</Deuteranopia>
+                        <Protanopia>-32596</Protanopia>
+                        <Tritanopia>-32596</Tritanopia>
+                        <None>-32596</None>
+                    </ParticipantUIColor>
+                    <ParticipantInGameColor>
+                        <Deuteranopia>-32596</Deuteranopia>
+                        <Protanopia>-32596</Protanopia>
+                        <Tritanopia>-32596</Tritanopia>
+                        <None>-32596</None>
+                    </ParticipantInGameColor>
+                    <IsPlayerColor>1</IsPlayerColor>
+                </ParticipantColor>
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <Scope>Account</Scope>
+                    <VisibleWhenLocked>1</VisibleWhenLocked>
+                </Locked>
+                <Text>
+                    <OasisId>2000101011</OasisId>
+                </Text>
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>ParticipantColor</Template>
+            <Values>
+                <Standard>
+                    <GUID>2000101012</GUID>
+                    <Name>ParticipantColor Pastel malve</Name>
+                </Standard>
+                <ParticipantColor>
+                    <ParticipantUIColor>
+                        <Deuteranopia>-1073409</Deuteranopia>
+                        <Protanopia>-1073409</Protanopia>
+                        <Tritanopia>-1073409</Tritanopia>
+                        <None>-1073409</None>
+                    </ParticipantUIColor>
+                    <ParticipantInGameColor>
+                        <Deuteranopia>-1073409</Deuteranopia>
+                        <Protanopia>-1073409</Protanopia>
+                        <Tritanopia>-1073409</Tritanopia>
+                        <None>-1073409</None>
+                    </ParticipantInGameColor>
+                    <IsPlayerColor>1</IsPlayerColor>
+                </ParticipantColor>
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <Scope>Account</Scope>
+                    <VisibleWhenLocked>1</VisibleWhenLocked>
+                </Locked>
+                <Text>
+                    <OasisId>2000101012</OasisId>
+                </Text>
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>ParticipantColor</Template>
+            <Values>
+                <Standard>
+                    <GUID>2000101013</GUID>
+                    <Name>ParticipantColor Pastel yellow</Name>
+                </Standard>
+                <ParticipantColor>
+                    <ParticipantUIColor>
+                        <Deuteranopia>-341146</Deuteranopia>
+                        <Protanopia>-341146</Protanopia>
+                        <Tritanopia>-341146</Tritanopia>
+                        <None>-341146</None>
+                    </ParticipantUIColor>
+                    <ParticipantInGameColor>
+                        <Deuteranopia>-341146</Deuteranopia>
+                        <Protanopia>-341146</Protanopia>
+                        <Tritanopia>-341146</Tritanopia>
+                        <None>-341146</None>
+                    </ParticipantInGameColor>
+                    <IsPlayerColor>1</IsPlayerColor>
+                </ParticipantColor>
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <Scope>Account</Scope>
+                    <VisibleWhenLocked>1</VisibleWhenLocked>
+                </Locked>
+                <Text>
+                    <OasisId>2000101013</OasisId>
+                </Text>
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>ParticipantColor</Template>
+            <Values>
+                <Standard>
+                    <GUID>2000101014</GUID>
+                    <Name>ParticipantColor Pastel green</Name>
+                </Standard>
+                <ParticipantColor>
+                    <ParticipantUIColor>
+                        <Deuteranopia>-4592804</Deuteranopia>
+                        <Protanopia>-4592804</Protanopia>
+                        <Tritanopia>-4592804</Tritanopia>
+                        <None>-4592804</None>
+                    </ParticipantUIColor>
+                    <ParticipantInGameColor>
+                        <Deuteranopia>-4592804</Deuteranopia>
+                        <Protanopia>-4592804</Protanopia>
+                        <Tritanopia>-4592804</Tritanopia>
+                        <None>-4592804</None>
+                    </ParticipantInGameColor>
+                    <IsPlayerColor>1</IsPlayerColor>
+                </ParticipantColor>
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <Scope>Account</Scope>
+                    <VisibleWhenLocked>1</VisibleWhenLocked>
+                </Locked>
+                <Text>
+                    <OasisId>2000101014</OasisId>
+                </Text>
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>ParticipantColor</Template>
+            <Values>
+                <Standard>
+                    <GUID>2000101015</GUID>
+                    <Name>ParticipantColor Pastel turquoise</Name>
+                </Standard>
+                <ParticipantColor>
+                    <ParticipantUIColor>
+                        <Deuteranopia>-11931993</Deuteranopia>
+                        <Protanopia>-11931993</Protanopia>
+                        <Tritanopia>-11931993</Tritanopia>
+                        <None>-11931993</None>
+                    </ParticipantUIColor>
+                    <ParticipantInGameColor>
+                        <Deuteranopia>-11931993</Deuteranopia>
+                        <Protanopia>-11931993</Protanopia>
+                        <Tritanopia>-11931993</Tritanopia>
+                        <None>-11931993</None>
+                    </ParticipantInGameColor>
+                    <IsPlayerColor>1</IsPlayerColor>
+                </ParticipantColor>
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <Scope>Account</Scope>
+                    <VisibleWhenLocked>1</VisibleWhenLocked>
+                </Locked>
+                <Text>
+                    <OasisId>2000101015</OasisId>
+                </Text>
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>ParticipantColor</Template>
+            <Values>
+                <Standard>
+                    <GUID>2000101016</GUID>
+                    <Name>ParticipantColor Pastel blue</Name>
+                </Standard>
+                <ParticipantColor>
+                    <ParticipantUIColor>
+                        <Deuteranopia>-12938770</Deuteranopia>
+                        <Protanopia>-12938770</Protanopia>
+                        <Tritanopia>-12938770</Tritanopia>
+                        <None>-12938770</None>
+                    </ParticipantUIColor>
+                    <ParticipantInGameColor>
+                        <Deuteranopia>-12938770</Deuteranopia>
+                        <Protanopia>-12938770</Protanopia>
+                        <Tritanopia>-12938770</Tritanopia>
+                        <None>-12938770</None>
+                    </ParticipantInGameColor>
+                    <IsPlayerColor>1</IsPlayerColor>
+                </ParticipantColor>
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <Scope>Account</Scope>
+                    <VisibleWhenLocked>1</VisibleWhenLocked>
+                </Locked>
+                <Text>
+                    <OasisId>2000101016</OasisId>
+                </Text>
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>ParticipantColor</Template>
+            <Values>
+                <Standard>
+                    <GUID>2000101017</GUID>
+                    <Name>ParticipantColor Pastel darkblue</Name>
+                </Standard>
+                <ParticipantColor>
+                    <ParticipantUIColor>
+                        <Deuteranopia>-10139154</Deuteranopia>
+                        <Protanopia>-10139154</Protanopia>
+                        <Tritanopia>-10139154</Tritanopia>
+                        <None>-10139154</None>
+                    </ParticipantUIColor>
+                    <ParticipantInGameColor>
+                        <Deuteranopia>-10139154</Deuteranopia>
+                        <Protanopia>-10139154</Protanopia>
+                        <Tritanopia>-10139154</Tritanopia>
+                        <None>-10139154</None>
+                    </ParticipantInGameColor>
+                    <IsPlayerColor>1</IsPlayerColor>
+                </ParticipantColor>
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <Scope>Account</Scope>
+                    <VisibleWhenLocked>1</VisibleWhenLocked>
+                </Locked>
+                <Text>
+                    <OasisId>2000101017</OasisId>
+                </Text>
+            </Values>
+        </Asset>
+        <!-- END: =================== More custom colors from Taludas ============== -->
+
+        <!-- START: ========================== More colors, from discord user Koda Uzamaki ===================== -->
+        <!-- Custom Dark Green -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -260,9 +581,8 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
-    <!-- Custom Dark Grey (umbenannt vom alten DarkGreen) -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+
+        <!-- Custom Dark Grey (umbenannt vom alten DarkGreen) -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -296,9 +616,8 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
-    <!-- Custom Türkiesblau -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+
+        <!-- Custom Türkiesblau -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -332,9 +651,8 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
-    <!-- Custom Olive Green (stable, darker than original) -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+
+        <!-- Custom Olive Green (stable, darker than original) -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -368,9 +686,8 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
-    <!-- Custom Dark Red (stable, darker than original) -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+
+        <!-- Custom Dark Red (stable, darker than original) -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -405,9 +722,8 @@
                 </Text>
             </Values>
         </Asset>
-    </ModOp>
-    <!-- Custom Purpel (stable, darker than original) -->
-    <ModOp GUID="2002447" Type="addNextSibling">
+
+        <!-- Custom Purpel (stable, darker than original) -->
         <Asset>
             <Template>ParticipantColor</Template>
             <Values>
@@ -441,12 +757,14 @@
                 </Text>
             </Values>
         </Asset>
+        <!-- END: ========================== More colors, from discord user Koda Uzamaki ===================== -->
+
     </ModOp>
-    <!-- END: ========================== More colors, from discord user Koda Uzamaki ===================== -->
 
     <!-- START: ============================ Register custom colors ========================= -->
     <ModOp Type="add" GUID="2002447"
         Path="/Values/ParticipantRepresentationFeature/ParticipantColors">
+        <!-- =================== custom colors from ewjax =================== -->
         <Item>
             <Color>2000101000</Color>
         </Item>
@@ -465,6 +783,40 @@
         <Item>
             <Color>2000101005</Color>
         </Item>
+        <Item>
+            <Color>2000101006</Color>
+        </Item>
+        <Item>
+            <Color>2000101007</Color>
+        </Item>
+
+        <!-- =================== More custom colors from Taludas ============== -->
+		<Item>
+			<Color>2000101010</Color>
+		</Item>
+		<Item>
+			<Color>2000101011</Color>
+		</Item>
+		<Item>
+			<Color>2000101012</Color>
+		</Item>
+		<Item>
+			<Color>2000101013</Color>
+		</Item>
+		<Item>
+			<Color>2000101014</Color>
+		</Item>
+		<Item>
+			<Color>2000101015</Color>
+		</Item>
+		<Item>
+			<Color>2000101016</Color>
+		</Item>
+		<Item>
+			<Color>2000101017</Color>
+		</Item>
+
+        <!-- ========================== More colors, from discord user Koda Uzamaki ===================== -->
         <Item>
             <Color>2000101057</Color>
         </Item>

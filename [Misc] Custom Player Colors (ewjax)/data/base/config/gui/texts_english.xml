@@ -27,7 +27,50 @@
             <LineId>2000101005</LineId>
             <Text>Bright Cyan</Text>
         </Text>
+        <Text>
+            <LineId>2000101006</LineId>
+            <Text>Jet Black</Text>
+        </Text>
+        <Text>
+            <LineId>2000101007</LineId>
+            <Text>Alabaster White</Text>
+        </Text>
         <!-- END: ----------------------------- Custom Color Names ------------------------------- -->
+
+        <!-- START: =================== More custom colors from Taludas ============== -->
+        <Text>
+            <LineId>2000101010</LineId>
+            <Text>Pastel Orange</Text>
+        </Text>
+        <Text>
+            <LineId>2000101011</LineId>
+            <Text>Pastel Rose</Text>
+        </Text>
+        <Text>
+            <LineId>2000101012</LineId>
+            <Text>Pastel Mauve</Text>
+        </Text>
+        <Text>
+            <LineId>2000101013</LineId>
+            <Text>Pastel Yellow</Text>
+        </Text>
+        <Text>
+            <LineId>2000101014</LineId>
+            <Text>Pastel Green</Text>
+        </Text>
+        <Text>
+            <LineId>2000101015</LineId>
+            <Text>Pastel Turquoise</Text>
+        </Text>
+        <Text>
+            <LineId>2000101016</LineId>
+            <Text>Pastel Blue</Text>
+        </Text>
+        <Text>
+            <LineId>2000101017</LineId>
+            <Text>Pastel Darkblue</Text>
+        </Text>
+        <!-- END: =================== More custom colors from Taludas ============== -->
 
         <!-- START: ----------------------------- More colors, from discord user Koda Uzamaki ------------------------------- -->
         <Text>

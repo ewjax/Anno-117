@@ -5,10 +5,13 @@
 *.out
 *.app
 
+# zip files
+*.zip
+
 # VS Code
 *.vscode
 
-# working directory
+# working directories
 working/
 .modcache/
 
