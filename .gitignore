@@ -15,6 +15,9 @@
 working/
 .modcache/
 
+# PyCharm
+.idea/
+
 # Visual SlickEdit projct files
 *.vtg
 *.vpj
