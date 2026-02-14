@@ -1,4 +1,14 @@
-from enum import IntFlag, auto
+from enum import IntFlag, IntEnum, auto
+
+
+class IslandSize(IntEnum):
+    """
+    enum for island sizes
+    """
+    EXTRALARGE = auto(),
+    LARGE = auto(),
+    MEDIUM = auto(),
+    SMALL = auto()
 
 
 class LatiumFertility(IntFlag):
@@ -28,15 +38,20 @@ class LatiumIsland:
                  island_name: str,
                  fert_values: LatiumFertility = LatiumFertility.NONE,
                  river_slots: int = 0,
-                 mountain_slots: int = 0):
+                 mountain_slots: int = 0,
+                 island_size: IslandSize = IslandSize.LARGE
+                 ):
         self.island_name = island_name,
         self.fertilities = fert_values
         self.river_slots = river_slots
         self.mountain_slots = mountain_slots
-        # todo - add something for size
+        self.island_size = island_size
+
+        # todo - albion marshes
 
         # dictionary of fertility types and their weights
         self.fertility_weight = {}
+        self.island_size_weight = {}
         self.define_weights()
 
 
@@ -47,9 +62,10 @@ class LatiumIsland:
         Tier3 - 3 points
         Tier4 - 1 point per production chain
         Construction material - use tier scores, but divide by 2
-        River slots - 1 point per slot, multiplied by gold ore score?
-        Mountain slots - 1 point per slot, multiplied by mineral score?
+        River slots - 1 point per slot, adjusted by gold ore and/or sturgeon presence
+        Mountain slots - 1 point per slot, adjusted by mineral score?
         """
+
         # tier2 chains - garum, soap
         self.fertility_weight[LatiumFertility.MACKEREL] = 5
         self.fertility_weight[LatiumFertility.LAVENDAR] = 5
@@ -84,6 +100,13 @@ class LatiumIsland:
         # tier4 - necklaces, lyres
         self.fertility_weight[LatiumFertility.GOLD_ORE] = 2
 
+        # island size
+        self.island_size_weight[IslandSize.EXTRALARGE] = 7
+        self.island_size_weight[IslandSize.LARGE] = 5
+        self.island_size_weight[IslandSize.MEDIUM] = 3
+        self.island_size_weight[IslandSize.SMALL] = 1
+
+
     def calculate_score(self) -> float:
         """
         determine score based purely on this island's fertilities
@@ -92,18 +115,34 @@ class LatiumIsland:
         score
         """
         rv = 0.0
+
+        # start with basic fertilities
         fert: LatiumFertility
         for fert in LatiumFertility:
             if self.has_fertility(fert.value):
                 rv += self.fertility_weight[fert.value]
 
-        # todo
-        # do something cleverer with rivers and mountain slots
+        # river slots. increase weighting if there is also a Sturgeon or Gold fertility
         rv += self.river_slots
-        rv += self.mountain_slots
+        if self.has_fertility(LatiumFertility.STURGEON):
+            rv += (self.river_slots) / 2.0
+        if self.has_fertility(LatiumFertility.GOLD_ORE):
+            rv += (self.river_slots) / 2.0
 
-        # todo - need to differentiate if this fertility is already accounted for in the trial island set, i.e. don't double count
-        # todo - need to provide a scoring weight depending on island order
+        # mountain slots. increase weighting if there is also a Mineral fertility
+        rv += self.mountain_slots
+        if self.has_fertility(LatiumFertility.MINERAL):
+            rv += (self.mountain_slots) / 2.0
+
+        # island size
+        if self.island_size == IslandSize.EXTRALARGE:
+            rv += 7
+        elif self.island_size == IslandSize.LARGE:
+            rv += 5
+        elif self.island_size == IslandSize.MEDIUM:
+            rv += 3
+        elif self.island_size == IslandSize.SMALL:
+            rv += 1
 
         return rv
 
@@ -132,6 +171,8 @@ class LatiumIsland:
     def set_mountain_slots(self, slots: int):
         self.mountain_slots = slots
 
+    def set_island_size(self, island_size: IslandSize):
+        self.island_size = island_size
 
     def dump(self):
         """
@@ -144,20 +185,24 @@ class LatiumIsland:
 
 def main():
 
-    # print(LatiumFertility.NONE)
-    # print(LatiumFertility)
 
+    print(IslandSize)
+    print(f"{IslandSize._member_map_}")
+
+    # print(LatiumFertility.NONE)
+    print(LatiumFertility)
     print(f"{LatiumFertility._member_names_}")
     print(f"{LatiumFertility._member_map_}")
     print(f"{LatiumFertility.__members__}")
 
     name = 'sample island'
     print(f"name = [{name}]")
-    li2 = LatiumIsland(name);
+    li2 = LatiumIsland(name)
+    # li2.dump()
 
     # todo - why did the name string get changed into an array of strings
     print(f"name = [{li2.island_name}]")
-    print(f"name = [{li2.island_name[0]}]")
+    print(f"name = [{li2.island_name[0]}]")     # why did the name string become an array of strings???
 
     li2.add_fertility(LatiumFertility.MACKEREL)
     li2.add_fertility(LatiumFertility.LAVENDAR | LatiumFertility.RESIN)
@@ -175,7 +220,8 @@ def main():
         li_max.add_fertility(fert.value)
     li_max.set_river_slots(12)
     li_max.set_mountain_slots(8)
-    li_max.dump()
+    li_max.set_island_size(IslandSize.EXTRALARGE)
+    # li_max.dump()
     print(f"Island score: [{li_max.island_name}], [{li_max.calculate_score()}]")
 
 
