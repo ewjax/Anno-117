@@ -1,6 +1,7 @@
 import math
-
 import numpy
+
+import Islands
 
 
 #
@@ -157,6 +158,18 @@ class LatiumIslandSorter(SimulatedAnnealing_Base):
     def score(self, candidate_list: []) -> float:
         rv = 0.0
 
+        # keep track of fertilities
+        fertility_coverage = Islands.LatiumFertility.NONE
+
+        # set all bits
+        for fert in Islands.LatiumFertility:
+            fertility_coverage |= fert
+
+        # clear a bit
+        # mask = ~fert_value
+        # fertility_coverage &= mask
+
+        # return self.fertilities & fert_value == fert_value
 
         return rv
 

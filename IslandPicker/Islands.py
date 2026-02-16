@@ -156,6 +156,16 @@ class LatiumIsland:
         """
         self.fertilities |= fert_value
 
+    def remove_fertility(self, fert_value: LatiumFertility):
+        """
+        Remove a fertility to this island
+        :param fert_value:
+        LatiumFertility value to be removed
+        :return:
+        None
+        """
+        self.fertilities &= ~fert_value
+
     def has_fertility(self, fert_value: LatiumFertility) -> bool:
         """
         Does this island have this fertility?
@@ -217,6 +227,34 @@ def main():
     li_max.set_island_size(IslandSize.EXTRALARGE)
     # li_max.dump()
     print(f"Island score: [{li_max.island_name}], [{li_max.calculate_score()}]")
+
+    # set every flag
+    fertility_coverage = LatiumFertility.NONE
+    for fert in LatiumFertility:
+        fertility_coverage |= fert
+
+    print(fertility_coverage)
+
+    # return self.fertilities & fert_value == fert_value
+    # is Lavendar set?
+    if fertility_coverage & LatiumFertility.LAVENDAR == LatiumFertility.LAVENDAR:
+        print("Lavendar set")
+    else:
+        print("Lavendar clear")
+
+    # clear lavendar
+    fertility_coverage &= ~LatiumFertility.LAVENDAR
+    print(fertility_coverage)
+
+    # is Lavendar set?
+    if fertility_coverage & LatiumFertility.LAVENDAR == LatiumFertility.LAVENDAR:
+        print("Lavendar set")
+    else:
+        print("Lavendar clear")
+
+
+
+
 
 
 if __name__ == '__main__':
