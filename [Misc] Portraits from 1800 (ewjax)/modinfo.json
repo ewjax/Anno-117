@@ -1,0 +1,77 @@
+{
+  "Version": "0.1.0",
+  "Anno": 8,
+  "ModID": "1800-portraits-ewjax",
+  "Difficulty": "unchanged",
+  "GameSetup": {
+    "RequiresNewGame": false,
+    "SafeToRemove": false,
+    "Multiplayer": true,
+    "Campaign": true
+  },
+  "Dependencies": {
+    "Require": [],
+    "Optional": [],
+    "LoadAfter": [],
+    "Deprecate": [],
+    "Incompatible": []
+  },
+  "Category": {
+    "Chinese": "Misc",
+    "English": "Misc",
+    "French": "Misc",
+    "German": "Misc",
+    "Italian": "Misc",
+    "Japanese": "Misc",
+    "Korean": "Misc",
+    "Polish": "Misc",
+    "Russian": "Misc",
+    "Spanish": "Misc",
+    "Taiwanese": "Misc"
+  },
+  "ModName": {
+    "Chinese": "Portraits from 1800 (ewjax)",
+    "English": "Portraits from 1800 (ewjax)",
+    "French": "Portraits from 1800 (ewjax)",
+    "German": "Portraits from 1800 (ewjax)",
+    "Italian": "Portraits from 1800 (ewjax)",
+    "Japanese": "Portraits from 1800 (ewjax)",
+    "Korean": "Portraits from 1800 (ewjax)",
+    "Polish": "Portraits from 1800 (ewjax)",
+    "Russian": "Portraits from 1800 (ewjax)",
+    "Spanish": "Portraits from 1800 (ewjax)",
+    "Taiwanese": "Portraits from 1800 (ewjax)"
+  },
+  "Description": {
+    "Chinese": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800",
+    "English": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800",
+    "French": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800",
+    "German": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800",
+    "Italian": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800",
+    "Japanese": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800",
+    "Korean": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800",
+    "Polish": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800",
+    "Russian": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800",
+    "Spanish": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800",
+    "Taiwanese": "#  Portraits from 1800 \n\n This mod allows use of portraits from Anno 1800"
+  },
+  "KnownIssues": [
+    {
+      "Chinese": null,
+      "English": null,
+      "French": null,
+      "German": null,
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    }
+  ],
+  "DLCDependencies": [],
+  "CreatorName": "ewjax",
+  "CreatorContact": "",
+  "Image": null
+}
